@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .content {
+            display: flex;
+            margin-top: 60px;
+            flex: 1;
+        }
+        .left-menu, .right-panel {
+            width: 20%;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+        .main-content {
+            flex: 1;
+            padding: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .collapsible {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        Fixed Navbar
+    </nav>
+    <div class="content">
+        <div class="left-menu" id="left-menu">
+            <button onclick="toggleMenu()">Toggle Menu</button>
+            <p>Left Menu</p>
+        </div>
+        <div class="main-content">
+            Main Content
+        </div>
+        <div class="right-panel">
+            Right Panel
+        </div>
+    </div>
+    <footer>
+        Footer
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('left-menu');
+            menu.classList.toggle('collapsible');
+        }
+        function adjustZoom() {
+    let width = window.innerWidth;
+    if (width <= 600) {
+        document.body.style.zoom = "50%";
+    } else if (width <= 700) {
+        document.body.style.zoom = "75%";
+    } else if (width <= 767) {
+        document.body.style.zoom = "80%";
+    } else if (width <= 1600) {
+        document.body.style.zoom = "90%";
+    } else {
+        document.body.style.zoom = "100%";
+    }
+}
+window.addEventListener('resize', adjustZoom);
+adjustZoom(); // Call once on load
+
+    </script>
+</body>
+</html>

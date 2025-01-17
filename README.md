@@ -90,18 +90,18 @@ The application is hosted on **PythonAnywhere**. You can access it using the fol
 
 ```
 chat_project/
-|-- chat_project/       # Main Django project folder
-|   |-- __init__.py
-|   |-- settings.py      # Project settings
-|   |-- urls.py          # URL routing
-|   |-- wsgi.py          # WSGI configuration for deployment
-|
-|-- chat/               # Django app folder
+|-- call/               # Django app folder
 |   |-- migrations/      # Database migrations
 |   |-- templates/       # HTML templates
 |   |-- views.py         # Application logic
 |   |-- models.py        # Database models
 |   |-- forms.py         # Forms for user input
+|
+|-- chat_project/       # Main Django project folder
+|   |-- __init__.py
+|   |-- settings.py      # Project settings
+|   |-- urls.py          # URL routing
+|   |-- wsgi.py          # WSGI configuration for deployment
 |
 |-- manage.py           # Django project management script
 |-- requirements.txt    # Python dependencies

@@ -39,7 +39,7 @@ Follow these steps to set up the project:
 
 1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/Fahmithasirin/Chat.git>
    cd chat_project
    ```
 
@@ -119,11 +119,6 @@ chat_project/
 
 ---
 
-## License
-
-This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute this project as per the license terms.
-
----
 
 ## Author
 

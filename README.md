@@ -129,5 +129,5 @@ This project is licensed under the [MIT License](LICENSE). You are free to use, 
 
 Developed by Fahmitha Sirin.
 
-For inquiries or suggestions, feel free to contact: [fahmitha.sirin@example.com](mailto:fahmitha.sirin@example.com)
+For inquiries or suggestions, feel free to contact: [fahmitha.sirin@gmail.com](mailto:fahmitha.sirin@gmail.com)
 
